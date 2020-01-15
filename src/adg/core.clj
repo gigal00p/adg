@@ -31,5 +31,6 @@
 (defn post-docs
   [ndocs]
   (dotimes [n ndocs]
-    (do (Thread/sleep (rand-int 10))
+    (do 
+      ; (Thread/sleep (rand-int 5))
         (index-es-doc))))
